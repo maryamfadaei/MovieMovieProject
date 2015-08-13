@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>moviemovie</Name>
+    <RootNamespace>moviemovie</RootNamespace>
+    <InterpreterId>{5782f238-6fc4-4625-ba04-42a3e99d55df}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>45b652e1-ef0b-44b9-a0b3-8e8977cbff4a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="commenting\admin.py" />
+    <Compile Include="commenting\forms.py" />
+    <Compile Include="commenting\models.py" />
+    <Compile Include="commenting\tests.py" />
+    <Compile Include="commenting\urls.py" />
+    <Compile Include="commenting\views.py" />
+    <Compile Include="commenting\__init__.py" />
+    <Compile Include="discussion\admin.py" />
+    <Compile Include="discussion\models.py" />
+    <Compile Include="discussion\tests.py" />
+    <Compile Include="discussion\urls.py" />
+    <Compile Include="discussion\views old.py" />
+    <Compile Include="discussion\views.py" />
+    <Compile Include="discussion\__init__.py" />
+    <Compile Include="homepage\admin.py" />
+    <Compile Include="homepage\models.py" />
+    <Compile Include="homepage\tests.py" />
+    <Compile Include="homepage\urls.py" />
+    <Compile Include="homepage\views.py" />
+    <Compile Include="homepage\__init__.py" />
+    <Compile Include="location\admin.py" />
+    <Compile Include="location\models.py" />
+    <Compile Include="location\tests.py" />
+    <Compile Include="location\urls.py" />
+    <Compile Include="location\views.py" />
+    <Compile Include="location\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="moviedatabase\admin.py" />
+    <Compile Include="moviedatabase\models.py" />
+    <Compile Include="moviedatabase\tests.py" />
+    <Compile Include="moviedatabase\urls.py" />
+    <Compile Include="moviedatabase\views.py" />
+    <Compile Include="moviedatabase\__init__.py" />
+    <Compile Include="moviemovie\__init__.py" />
+    <Compile Include="moviemovie\settings.py" />
+    <Compile Include="moviemovie\urls.py" />
+    <Compile Include="moviemovie\wsgi.py" />
+    <Compile Include="movie_signin\admin.py" />
+    <Compile Include="movie_signin\forms.py" />
+    <Compile Include="movie_signin\models.py" />
+    <Compile Include="movie_signin\tests.py" />
+    <Compile Include="movie_signin\urls.py" />
+    <Compile Include="movie_signin\views.py" />
+    <Compile Include="movie_signin\__init__.py" />
+    <Compile Include="news\admin.py" />
+    <Compile Include="news\models.py" />
+    <Compile Include="news\tests.py" />
+    <Compile Include="news\urls.py" />
+    <Compile Include="news\views.py" />
+    <Compile Include="news\__init__.py" />
+    <Compile Include="payment\admin.py" />
+    <Compile Include="payment\models.py" />
+    <Compile Include="payment\tests.py" />
+    <Compile Include="payment\urls.py" />
+    <Compile Include="payment\views.py" />
+    <Compile Include="payment\__init__.py" />
+    <Compile Include="search\admin.py" />
+    <Compile Include="search\models.py" />
+    <Compile Include="search\tests.py" />
+    <Compile Include="search\urls.py" />
+    <Compile Include="search\views.py" />
+    <Compile Include="search\__init__.py" />
+    <Compile Include="thirdauth\admin.py" />
+    <Compile Include="thirdauth\models.py" />
+    <Compile Include="thirdauth\tests.py" />
+    <Compile Include="thirdauth\urls.py" />
+    <Compile Include="thirdauth\views.py" />
+    <Compile Include="thirdauth\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
+      <Feed>https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml</Feed>
+      <ProductId>Django</ProductId>
+      <FriendlyName>Django 1.4</FriendlyName>
+    </WebPiReference>
+    <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fPython27">
+      <Feed>https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml</Feed>
+      <ProductId>Python27</ProductId>
+      <FriendlyName>Python 2.7</FriendlyName>
+    </WebPiReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="commenting\" />
+    <Folder Include="commenting\static\" />
+    <Folder Include="commenting\static\commenting\" />
+    <Folder Include="commenting\static\commenting\img\" />
+    <Folder Include="commenting\templates\" />
+    <Folder Include="discussion\" />
+    <Folder Include="discussion\templates\" />
+    <Folder Include="discussion\templates\discussion\" />
+    <Folder Include="homepage\" />
+    <Folder Include="homepage\static\" />
+    <Folder Include="homepage\static\homepage\" />
+    <Folder Include="homepage\static\homepage\22 Jump Street\" />
+    <Folder Include="homepage\static\homepage\How To Train Your Dragon 2\" />
+    <Folder Include="homepage\templates\" />
+    <Folder Include="homepage\templates\homepage\" />
+    <Folder Include="location\" />
+    <Folder Include="location\templates\" />
+    <Folder Include="location\templates\location\" />
+    <Folder Include="moviedatabase\" />
+    <Folder Include="moviedatabase\templates\" />
+    <Folder Include="moviedatabase\templates\moviedatabase\" />
+    <Folder Include="moviemovie\" />
+    <Folder Include="movie_signin\" />
+    <Folder Include="movie_signin\templates\" />
+    <Folder Include="movie_signin\templates\movie_signin\" />
+    <Folder Include="news\" />
+    <Folder Include="news\static\" />
+    <Folder Include="news\static\news\" />
+    <Folder Include="news\templates\" />
+    <Folder Include="news\templates\news\" />
+    <Folder Include="payment\" />
+    <Folder Include="payment\static\" />
+    <Folder Include="payment\static\payment\" />
+    <Folder Include="payment\static\payment\img\" />
+    <Folder Include="payment\templates\" />
+    <Folder Include="payment\templates\payment\" />
+    <Folder Include="search\" />
+    <Folder Include="search\static\" />
+    <Folder Include="search\static\search\" />
+    <Folder Include="search\static\search\img\" />
+    <Folder Include="search\templates\" />
+    <Folder Include="search\templates\search\" />
+    <Folder Include="thirdauth\" />
+    <Folder Include="thirdauth\templates\" />
+    <Folder Include="thirdauth\templates\thirdauth\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{5782f238-6fc4-4625-ba04-42a3e99d55df}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="commenting\admin.pyc" />
+    <Content Include="commenting\models.pyc" />
+    <Content Include="commenting\static\.DS_Store" />
+    <Content Include="commenting\static\commenting\.DS_Store" />
+    <Content Include="commenting\static\commenting\comment.css" />
+    <Content Include="commenting\static\commenting\img\.DS_Store" />
+    <Content Include="commenting\static\commenting\img\22.jpg" />
+    <Content Include="commenting\static\commenting\img\store_logo.png" />
+    <Content Include="commenting\templates\comments.html" />
+    <Content Include="commenting\templates\index.html" />
+    <Content Include="commenting\urls.pyc" />
+    <Content Include="commenting\views.pyc" />
+    <Content Include="commenting\__init__.pyc" />
+    <Content Include="discussion\.DS_Store" />
+    <Content Include="discussion\models.pyc" />
+    <Content Include="discussion\templates\.DS_Store" />
+    <Content Include="discussion\templates\discussion\.DS_Store" />
+    <Content Include="discussion\templates\discussion\detail.html" />
+    <Content Include="discussion\templates\discussion\index.html" />
+    <Content Include="discussion\templates\discussion\new.html" />
+    <Content Include="discussion\__init__.pyc" />
+    <Content Include="homepage\.DS_Store" />
+    <Content Include="homepage\admin.pyc" />
+    <Content Include="homepage\models.pyc" />
+    <Content Include="homepage\static\homepage\1.jpg" />
+    <Content Include="homepage\static\homepage\2.jpg" />
+    <Content Include="homepage\static\homepage\22 Jump Street\1.jpg" />
+    <Content Include="homepage\static\homepage\22 Jump Street\2.jpg" />
+    <Content Include="homepage\static\homepage\22 Jump Street\3.jpg" />
+    <Content Include="homepage\static\homepage\22 Jump Street\main.jpg" />
+    <Content Include="homepage\static\homepage\22 Jump Street\Thumbs.db" />
+    <Content Include="homepage\static\homepage\22.jpg" />
+    <Content Include="homepage\static\homepage\22JumpStreet_1.jpg" />
+    <Content Include="homepage\static\homepage\3.jpg" />
+    <Content Include="homepage\static\homepage\4.jpg" />
+    <Content Include="homepage\static\homepage\actions.js" />
+    <Content Include="homepage\static\homepage\b13.png" />
+    <Content Include="homepage\static\homepage\DawnOfThePlanetOfTheApes_2.jpg" />
+    <Content Include="homepage\static\homepage\forums.jpg" />
+    <Content Include="homepage\static\homepage\guardianstopimg.jpg" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\1.jpg" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\2.jpg" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\3.jpg" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\desktop.ini" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\main.jpg" />
+    <Content Include="homepage\static\homepage\How To Train Your Dragon 2\_DS_Store" />
+    <Content Include="homepage\static\homepage\HowToTrainYourDragon2_2.jpg" />
+    <Content Include="homepage\static\homepage\jquery-1.11.1.js" />
+    <Content Include="homepage\static\homepage\jquery-ui-1.10.4.js" />
+    <Content Include="homepage\static\homepage\jquery.easing.1.3.js" />
+    <Content Include="homepage\static\homepage\jssor.core.js" />
+    <Content Include="homepage\static\homepage\jssor.slider.js" />
+    <Content Include="homepage\static\homepage\jssor.utils.js" />
+    <Content Include="homepage\static\homepage\loading.gif" />
+    <Content Include="homepage\static\homepage\login.jpg" />
+    <Content Include="homepage\static\homepage\movies.jpg" />
+    <Content Include="homepage\static\homepage\overlay.png" />
+    <Content Include="homepage\static\homepage\rankings.jpg" />
+    <Content Include="homepage\static\homepage\reese_wild.jpg" />
+    <Content Include="homepage\static\homepage\search-white.png" />
+    <Content Include="homepage\static\homepage\showtimes.jpg" />
+    <Content Include="homepage\static\homepage\site.css" />
+    <Content Include="homepage\static\homepage\site.css~" />
+    <Content Include="homepage\static\homepage\stores.jpg" />
+    <Content Include="homepage\static\homepage\style.css" />
+    <Content Include="homepage\static\homepage\Tammy_2.jpg" />
+    <Content Include="homepage\static\homepage\Thumbs.db" />
+    <Content Include="homepage\static\homepage\Transformers4_2.jpg" />
+    <Content Include="homepage\static\homepage\unbroken.jpg" />
+    <Content Include="homepage\static\homepage\_DS_Store" />
+    <Content Include="homepage\templates\.DS_Store" />
+    <Content Include="homepage\templates\homepage\.DS_Store" />
+    <Content Include="homepage\templates\homepage\dragon2.html" />
+    <Content Include="homepage\templates\homepage\dragon2.html~" />
+    <Content Include="homepage\templates\homepage\index.html" />
+    <Content Include="homepage\templates\homepage\index.html~" />
+    <Content Include="homepage\templates\homepage\jump.html" />
+    <Content Include="homepage\templates\homepage\jump.html~" />
+    <Content Include="homepage\urls.pyc" />
+    <Content Include="homepage\urls.py~" />
+    <Content Include="homepage\views.pyc" />
+    <Content Include="homepage\views.py~" />
+    <Content Include="homepage\__init__.pyc" />
+    <Content Include="location\.DS_Store" />
+    <Content Include="location\admin.pyc" />
+    <Content Include="location\api key.txt" />
+    <Content Include="location\googlemap.html" />
+    <Content Include="location\googlemap.js" />
+    <Content Include="location\models.pyc" />
+    <Content Include="location\templates\.DS_Store" />
+    <Content Include="location\templates\location\.DS_Store" />
+    <Content Include="location\templates\location\location.html" />
+    <Content Include="location\urls.pyc" />
+    <Content Include="location\urls.py~" />
+    <Content Include="location\userlocation.html" />
+    <Content Include="location\views.pyc" />
+    <Content Include="location\__init__.pyc" />
+    <Content Include="moviedatabase\.DS_Store" />
+    <Content Include="moviedatabase\models.pyc" />
+    <Content Include="moviedatabase\templates\.DS_Store" />
+    <Content Include="moviedatabase\templates\moviedatabase\.DS_Store" />
+    <Content Include="moviedatabase\templates\moviedatabase\index.html" />
+    <Content Include="moviedatabase\templates\moviedatabase\moviedetail.html" />
+    <Content Include="moviedatabase\templates\moviedatabase\success.html" />
+    <Content Include="moviedatabase\__init__.pyc" />
+    <Content Include="movie_signin\admin.pyc" />
+    <Content Include="movie_signin\forms.pyc" />
+    <Content Include="movie_signin\models.pyc" />
+    <Content Include="movie_signin\templates\movie_signin\index.html" />
+    <Content Include="movie_signin\templates\movie_signin\index.html~" />
+    <Content Include="movie_signin\templates\movie_signin\login.html" />
+    <Content Include="movie_signin\templates\movie_signin\register.html" />
+    <Content Include="movie_signin\urls.pyc" />
+    <Content Include="movie_signin\views.pyc" />
+    <Content Include="movie_signin\__init__.pyc" />
+    <Content Include="news\.DS_Store" />
+    <Content Include="news\models.pyc" />
+    <Content Include="news\static\news\22.jpg" />
+    <Content Include="news\static\news\guardianstopimg.jpg" />
+    <Content Include="news\static\news\news_style.css" />
+    <Content Include="news\static\news\reese.jpg" />
+    <Content Include="news\static\news\unbroken.jpg" />
+    <Content Include="news\templates\.DS_Store" />
+    <Content Include="news\templates\news\.DS_Store" />
+    <Content Include="news\templates\news\galaxy.html" />
+    <Content Include="news\templates\news\index.html" />
+    <Content Include="news\templates\news\reese_witherspoon.html" />
+    <Content Include="news\templates\news\unbroken.html" />
+    <Content Include="news\__init__.pyc" />
+    <Content Include="payment\.DS_Store" />
+    <Content Include="payment\admin.pyc" />
+    <Content Include="payment\admin.py~" />
+    <Content Include="payment\models.pyc" />
+    <Content Include="payment\models.py~" />
+    <Content Include="payment\static\.DS_Store" />
+    <Content Include="payment\static\payment\.DS_Store" />
+    <Content Include="payment\static\payment\cart.css" />
+    <Content Include="payment\static\payment\img\.DS_Store" />
+    <Content Include="payment\static\payment\img\22.jpg" />
+    <Content Include="payment\static\payment\img\cart.png" />
+    <Content Include="payment\static\payment\img\FrozenDVD.jpg" />
+    <Content Include="payment\static\payment\img\MaleficentPoster.jpg" />
+    <Content Include="payment\static\payment\img\NeedForSpeedGame.jpg" />
+    <Content Include="payment\static\payment\img\store_logo.png" />
+    <Content Include="payment\static\payment\img\SupermanBook.jpg" />
+    <Content Include="payment\static\payment\img\ThorToy.jpg" />
+    <Content Include="payment\static\payment\img\TransformerToy.jpg" />
+    <Content Include="payment\static\payment\store.css" />
+    <Content Include="payment\templates\.DS_Store" />
+    <Content Include="payment\templates\payment\.DS_Store" />
+    <Content Include="payment\templates\payment\application.js~" />
+    <Content Include="payment\templates\payment\cart.html" />
+    <Content Include="payment\templates\payment\cart.html~" />
+    <Content Include="payment\templates\payment\index.html" />
+    <Content Include="payment\templates\payment\index.html~" />
+    <Content Include="payment\templates\payment\payment.html" />
+    <Content Include="payment\templates\payment\payment.html~" />
+    <Content Include="payment\urls.pyc" />
+    <Content Include="payment\urls.py~" />
+    <Content Include="payment\views.pyc" />
+    <Content Include="payment\views.py~" />
+    <Content Include="payment\__init__.pyc" />
+    <Content Include="search\.DS_Store" />
+    <Content Include="search\models.pyc" />
+    <Content Include="search\static\.DS_Store" />
+    <Content Include="search\static\search\.DS_Store" />
+    <Content Include="search\static\search\img\.DS_Store" />
+    <Content Include="search\static\search\img\arrow.png" />
+    <Content Include="search\static\search\img\bg.jpg" />
+    <Content Include="search\static\search\img\buttons.png" />
+    <Content Include="search\static\search\img\heading.png" />
+    <Content Include="search\static\search\img\icons.png" />
+    <Content Include="search\static\search\img\more.png" />
+    <Content Include="search\static\search\img\searchBox.png" />
+    <Content Include="search\static\search\script.js" />
+    <Content Include="search\static\search\script.js~" />
+    <Content Include="search\static\search\styles.css" />
+    <Content Include="search\static\search\styles.css~" />
+    <Content Include="search\templates\.DS_Store" />
+    <Content Include="search\templates\search\.DS_Store" />
+    <Content Include="search\templates\search\search.html" />
+    <Content Include="search\templates\search\search.html~" />
+    <Content Include="search\__init__.pyc" />
+    <Content Include="thirdauth\admin.pyc" />
+    <Content Include="thirdauth\models.pyc" />
+    <Content Include="thirdauth\templates\thirdauth\base.html" />
+    <Content Include="thirdauth\templates\thirdauth\base.html~" />
+    <Content Include="thirdauth\templates\thirdauth\home.html" />
+    <Content Include="thirdauth\templates\thirdauth\home.html~" />
+    <Content Include="thirdauth\urls.pyc" />
+    <Content Include="thirdauth\urls.py~" />
+    <Content Include="thirdauth\views.pyc" />
+    <Content Include="thirdauth\views.py~" />
+    <Content Include="thirdauth\__init__.pyc" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

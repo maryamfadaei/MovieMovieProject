@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Log In | Movie Movie</title>
+<link rel="stylesheet" href="{% static 'movie_signin/login-style.css' %}" type="text/css"/>
+
+</head>
+<body>
+    <h1 class="title"><a href="{% url 'homepage:index' %}">
+    <img src="{% static 'movie_signin/logo.png' %}" alt=""/></a></h1>
+    
+<div class="inner-page">
+    
+{% if user.is_authenticated %}
+<h1 class="welcome">Hello {{ user.username }}, welcome to MovieMovie!</h1>
+<p><a href="{% url 'homepage:index' %}">
+    <img src="{% static 'movie_signin/home.png' %}" alt=""/></a></p>
+<p><a href="{% url 'movie_signin:logout' %}"><img src="{% static 'movie_signin/logout.png' %}" alt=""/></a></p>
+
+{% else %}
+<p><a href="{% url 'movie_signin:login' %}"><img src="{% static 'movie_signin/login.png' %}" alt=""/></a></p>
+
+<p><a href="{% url 'movie_signin:register' %}"><img src="{% static 'movie_signin/register.png' %}" alt=""/></a></p>
+
+<p><a href="{% url 'thirdauth:home' %}"><img src="{% static 'movie_signin/third-auth.png' %}" alt=""/></a></p>
+
+
+{% endif %}
+
+</div>
+</body>
+</html>

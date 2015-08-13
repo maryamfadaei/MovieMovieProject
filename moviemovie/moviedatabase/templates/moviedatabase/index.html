@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Licheng Yu" />
+    <title>Movie Management Database</title>
+</head>
+<body>
+<form method="post" action="{% url 'moviedatabase:add' %}">
+{% csrf_token %}
+<dl class="form"></dl>
+<p class="helptext"><span class="required">*</span> This field is required.</p>
+<p><input type="submit" value="add"></p></form>
+</body>
+</html>

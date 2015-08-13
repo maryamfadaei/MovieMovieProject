@@ -1,0 +1,14 @@
+<h1>New Discussion</h1>
+<form method="post" action="{% url 'discussion:Create Topic' %}">
+{% csrf_token %}
+<dl class="form">
+<dt><label for="id_title">Title:</label></dt>
+<dd><div class="field"><input id="id_title" maxlength="200" name="title" type="text"></div></dd>
+
+<dt><label for="id_text">Text:</label></dt>
+<dd><div class="field"><textarea cols="40" id="id_text" name="text" rows="10"></textarea></div>
+
+</dl>
+
+<p><input type="submit" value="Create Topic"></p>
+</form>

@@ -1,0 +1,48 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+body
+{
+	background-image: url("img/22.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: Gill Sans,Arial,sans-serif;
+}
+
+.inner-page{
+	background:#f2f2f2;
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+	display:table;
+	padding:20px;
+}
+
+h1.title{
+	margin: 0 auto;
+	display: table;
+	margin-bottom:50px;
+	}
+
+.commentbody {
+    width:1000px;
+	height:auto;
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:#FFF;
+	border-style:solid;
+	border-width:1px;
+	border-color:#dbdbdb;
+	float:left;
+}
+table{
+	margin: 0 auto;
+}
+
+#submit_button{
+	text-align: center;
+}
+
+
+

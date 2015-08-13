@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Log In | Movie Movie</title>
+<link rel="stylesheet" href="{% static 'movie_signin/login-style.css' %}" type="text/css"/>
+
+</head>
+
+<body>
+<h1 class="title"><a href="{% url 'homepage:index' %}">
+    <img src="{% static 'movie_signin/logo.png' %}" alt=""/></a></h1>
+<div class="login-content">
+        <div class="login-title"><strong>Login to MovieMovie</strong></div>
+
+        <form id="login_form" method="post" action="{% url 'movie_signin:login' %}">
+            {% csrf_token %}
+            Username: <br /><input type="text" name="username" value="" size="50" />
+            <br />
+            Password: <br /><input type="password" name="password" value="" size="50" />
+            <br />
+
+            <input type="submit" value="submit" />
+        </form>
+</div>
+</body>
+</html>

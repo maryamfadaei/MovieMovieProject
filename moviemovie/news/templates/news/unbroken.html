@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Movie Movie</title>
+<script type="text/javascript" src="{% static 'homepage/jquery-1.11.1.js' %}"></script>
+<script type="text/javascript" src="{% static 'homepage/jquery-ui-1.10.4.js' %}"></script>
+<script type="text/javascript" src="{% static 'homepage/jquery.easing.1.3.js' %}"></script>
+<link rel="stylesheet" href="{% static 'news/news_style.css' %}" type="text/css"/>
+
+<style>
+			span.reference{
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			ul.sdt_menu{
+				margin-top:5em;
+
+			}
+			</style>
+
+
+</head>
+
+<body>
+<!--Site title with homepage link
+-->	<h1 class="title"><a href="{% url 'homepage:index' %}">
+<img src="{% static 'homepage/logo.png' %}" alt=""/></a></h1>
+<div class="content">
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a href="{% url 'homepage:index' %}">
+                                                <img src="{% static 'homepage/movies.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Movies</span>
+							<span class="sdt_descr">Collections</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+                    		<a href="{% url 'news:index' %}">News/Trailers</a>
+							<a href="#">Information</a>
+					</div>
+				</li>
+				<li>
+					<a href="{% url 'homepage:rank' %}"> 
+                                                <img src="{% static 'homepage/rankings.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Ranking</span>
+							<span class="sdt_descr">Top 10</span>
+						</span>
+					</a>
+             
+
+				</li>
+				<li>
+					<a href="#">
+                                                <img src="{% static 'homepage/forums.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Forums</span>
+							<span class="sdt_descr">Reviews/Comments</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+                                                <img src="{% static 'homepage/showtimes.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">ShowTimes</span>
+							<span class="sdt_descr">Theater Schedule</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+        				<a href="{% url 'location:location' %}">Find Theater Location</a>
+					</div>
+				</li>
+				<li>
+					<a href="{% url 'payment:store' %}">
+                                                <img src="{% static 'homepage/stores.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Store</span>
+							<span class="sdt_descr">I like to buy</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+        	
+						<a href="{% url 'payment:cart' %}">Shopping Cart</a>
+					</div>
+				</li>
+                <li>
+					<a href="{% url 'movie_signin:index' %}">
+                                                <img src="{% static 'homepage/login.jpg' %}"/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Login</span>
+							<span class="sdt_descr">Register/Sign in</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+<div class="inner-page">
+	<div class="movie-news">
+        <div class="news-pic">
+                <img src="{% static 'news/unbroken.jpg' %}" alt="Watch the trailer for Angelina Jolie's WWII survival saga Unbroken">
+    
+        </div>
+        <div class="news-title">
+        	<h2>Watch the trailer for Angelina Jolie's WWII survival saga Unbroken</h2>
+            <p>By Rachel West on July 10, 2014</p>
+        </div>
+        <div class="news-content">
+        <p>The incredible true story of former Olympian-turned-survivor Louis Zamperini is making a strong bid as an early Oscar contender thanks to director Angelina Jolie.</p>
+        <p>Played by Jack O’Connell (from the UK’s “Skins”) in Jolie’s film Unbroken, Zamperini had a priomising career as distance runner before becoming a WWII bombardier.  After his plane went down in 1943 killing eight out of the eleven men on board, Zamperini and his surviving crewmates were cast adrift at sea for 47 days, drifting 2000 miles before being caught by the Japanese Navy. Interned at a Japanese camp as an unregistered POW, Zamperini was at the mercy of a sadistic camp overseer while the United States Army declared him lost at sea. 
+        </p>
+
+        <p>The film was adapted from Laura Hillenbrand’s book by none other than Joel and Ethan Coen.  The film looks to have some breathtaking cinematography courtesy of eleven-time Oscar nominee and frequent Coen Brothers collaborator Roger Deakins (Skyfall, Prisoners, No Country For Old Men).  Will this be Deakins year?  The Academy loves a good biopic with an uplifting message and Jolie’s WWII survival saga will be hard to ignore.  </p>
+
+        <p>The rights for Zamperini's story were purchased back in 1957 as a vehicle for Tony Curtis, but was never realized, nor was the project developed after Nicolas Cage expressed interesting more recent years.  The film comes after the death of Zamperini, who passed away on July 2.</p>
+
+        <p>Unbroken, which also stars Domhnall Gleeson, Jai Courtney and Garrett Hedlund, surfaces in cinemas on Christmas Day.</p>
+
+        <p>Watch the trailer for Unbroken now, via Apple:</p>
+        
+        <center><iframe id="video-frame" style="" height="340" scrolling="no" src="http://trailers.apple.com/trailers/embed/unbroken/trailer/index.html" width="540"></iframe></center>
+        </div>
+        <div class="news-footer">
+        <p style="text-align:right;">Source: cineplex.com</p>
+        </div>
+	</div>
+</div>
+
+
+
+    <!-- The JavaScript -->
+	<script type="text/javascript">
+		$(function() {
+				/**
+				* for each menu element, on mouseenter, 
+				* we enlarge the image, and show both sdt_active span and 
+				* sdt_wrap span. If the element has a sub menu (sdt_box),
+				* then we slide it - if the element is the last one in the menu
+				* we slide it to the left, otherwise to the right
+				*/
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+</script>
+
+
+</body>
+</html>

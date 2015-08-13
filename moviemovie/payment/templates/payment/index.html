@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+{% load staticfiles %}
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Licheng Yu" />
+    <title>Purchase Success</title>
+    <script type="text/javascript" src="{% static 'homepage/jquery-1.11.1.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'payment/cart.css' %}" type="text/css"/>
+</head>
+<body>
+<h1>Success!</h1>
+<a href= "{% url 'homepage:index' %}">Go back to Homepage</a>
+</body>
+</html>

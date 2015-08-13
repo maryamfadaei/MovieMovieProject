@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Register | Movie Movie</title>
+<link rel="stylesheet" href="{% static 'movie_signin/login-style.css' %}" type="text/css"/>
+
+</head>
+
+<body>
+        <h1 class="title"><a href="{% url 'homepage:index' %}">
+    <img src="{% static 'movie_signin/logo.png' %}" alt=""/></a></h1>
+    
+
+        {% if registered %}
+         <h1 class="welcome"><strong>Thank you for registering!</strong></h1>
+        <p><a href="{% url 'homepage:index' %}">
+    <img src="{% static 'movie_signin/home.png' %}" alt=""/></a></p>
+        {% else %}
+         <div class="register-title"><strong>Register</strong></div>
+
+
+        <form id="user_form" method="post" action="{% url 'movie_signin:register' %}"
+                enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <!-- Display each form. The as_p method wraps each element in a paragraph
+                 (<p>) element. This ensures each element appears on a new line,
+                 making everything look neater. -->
+            {{ user_form.as_p }}
+
+            <!-- Provide a button to click to submit the form. -->
+            <input type="submit" name="submit" value="Register" />
+        </form>
+        {% endif %}
+        
+</body>
+</html>
